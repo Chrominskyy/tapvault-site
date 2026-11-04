@@ -13,19 +13,21 @@
   <meta property="og:title" content="TapVault | NFC Library for iPhone &amp; iPad">
   <meta property="og:description" content="Read, save and write compatible NFC tags. Explore TapVault for iPhone and iPad, support and data handling.">
   <meta property="og:url" content="https://chrominskyy.github.io/tapvault-site/">
-  <meta property="og:image" content="https://chrominskyy.github.io/tapvault-site/assets/nfc-orbit.png">
+  <meta property="og:image" content="https://chrominskyy.github.io/tapvault-site/assets/app-icon-1024.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="TapVault | NFC Library for iPhone &amp; iPad">
   <meta name="twitter:description" content="Read, save and write compatible NFC tags. Explore TapVault for iPhone and iPad, support and data handling.">
-  <meta name="twitter:image" content="https://chrominskyy.github.io/tapvault-site/assets/nfc-orbit.png">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta name="twitter:image" content="https://chrominskyy.github.io/tapvault-site/assets/app-icon-1024.png">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="index.html" aria-label="TapVault home">TapVault</a>
+    <a class="brand" href="index.html" aria-label="TapVault home"><img src="assets/apple-touch-icon.png" width="32" height="32" alt="TapVault icon">TapVault</a>
     <nav class="site-nav" aria-label="Main navigation">
       <ul>
         <li><a href="index.html#workflow">How it works</a></li>
@@ -36,7 +38,7 @@
   </div>
 </header>
 <main id="main">
-<section class="hero" aria-labelledby="hero-title"><div class="container"><div><p class="eyebrow">NFC Library for iPhone &amp; iPad</p><h1 id="hero-title">Your tags. Within reach.</h1><p class="lead">Read compatible NFC tags, keep their records in your library and write them when you need them.</p><p class="notice"><strong>Under development</strong></p><p>TapVault is a development-stage app. A verified download link will be added when available.</p><p><a class="button" href="#workflow">Explore TapVault</a><a href="support.html">Setup guide</a></p></div><img src="assets/nfc-orbit.png" width="1024" height="1024" alt="TapVault NFC orbit illustration, a glowing mint ring around a tag" fetchpriority="high"></div></section>
+<section class="hero" aria-labelledby="hero-title"><div class="container"><div><p class="eyebrow">NFC Library for iPhone &amp; iPad</p><h1 id="hero-title">Your tags. Within reach.</h1><p class="lead">Read compatible NFC tags, keep their records in your library and write them when you need them.</p><p class="notice"><strong>Under development</strong></p><p>TapVault is a development-stage app. A verified download link will be added when available.</p><p><a class="button" href="#workflow">Explore TapVault</a><a href="support.html">Setup guide</a></p></div><img src="assets/app-icon-1024.png" width="1024" height="1024" alt="TapVault app icon: a cyan NFC tag with radio waves on a navy background" fetchpriority="high"></div></section>
 <section aria-labelledby="library-title"><div class="container"><h2 id="library-title">Keep useful records together.</h2><p>A native SwiftUI app for compatible NFC tags, with Polish and English interfaces.</p><div class="cards-wrap"><ul class="cards"><li class="card"><h3>Read on iPhone.</h3><p>Inspect available NDEF records, tag technology, capacity and write access on a compatible physical iPhone.</p></li><li class="card"><h3>Build your library.</h3><p>Save records, rename entries and organize favorites. The app uses SwiftData with private iCloud synchronization when configured and available.</p></li><li class="card"><h3>Create and write.</h3><p>Create links, text and vCard contacts. Confirm before writing to a compatible writable tag; TapVault reads it back to verify the result.</p></li></ul></div></div></section>
 <section id="workflow" aria-labelledby="workflow-title"><div class="container"><h2 id="workflow-title">From a tap to your next task.</h2><ol class="steps"><li><h3>Read a tag.</h3><p>Start a scan on iPhone and hold a compatible tag near the NFC reader.</p></li><li><h3>Save the records.</h3><p>Choose a name and keep the content in your library, or create a new link, text or contact record.</p></li><li><h3>Write when ready.</h3><p>Check the destination, confirm the overwrite and keep the tag still until verification finishes.</p></li></ol><p><a href="support.html#setup">Read the setup instructions</a></p></div></section>
 <section aria-labelledby="scope-title"><div class="container"><div class="scope"><h2 id="scope-title">Know what your tag supports.</h2><p>Requires iOS/iPadOS 17 or later. iPad supports library and creator features; physical NFC reading and writing require a compatible iPhone. The simulator cannot perform NFC operations.</p><p>Supports compatible NDEF content on supported ISO 14443 / MIFARE, ISO 15693 and configured ISO 7816 NDEF tags. Proprietary applications, MIFARE Classic, card emulation and access-card cloning are not supported.</p><p>Scanning a tag does not create an Apple Wallet key. Wallet provisioning requires an issuer integration and is not implemented in this version.</p><p><a href="privacy.html">Read about data handling</a></p></div></div></section>

@@ -12,7 +12,7 @@ https://chrominskyy.github.io/tapvault-site/
 - Setup and reports: `support.html`
 - Data handling: `privacy.html`
 - Shared light/dark stylesheet: `css/main.css`
-- NFC illustration: `assets/nfc-orbit.png`, reused from TapVault’s existing app artwork.
+- App icon: `assets/app-icon-1024.png`, with browser and Apple touch icon sizes. Generated to match the CloudLatch and DevPulse app family.
 
 The app is under development. No App Store release, download URL or final privacy disclosure is claimed. The website uses no JavaScript, remote fonts or analytics.
 
