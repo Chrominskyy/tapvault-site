@@ -188,4 +188,19 @@ def check_favicon_ico(root):
 
 check_favicon_ico(ROOT)
 
+
+def check_og_image(root, base, pages):
+    """Social previews (summary_large_image) need a 1200x630 PNG."""
+    import struct
+    expected = base + "assets/og-image.png"
+    for path, page in pages.items():
+        assert page.meta.get("og:image") == expected, f"og:image should be {expected}: {path}"
+        assert page.meta.get("og:image:width") == "1200" and page.meta.get("og:image:height") == "630", f"og:image size meta: {path}"
+    data = (root / "assets/og-image.png").read_bytes()
+    assert data[:8] == b"\x89PNG\r\n\x1a\n", "og-image.png is not a PNG"
+    assert struct.unpack(">II", data[16:24]) == (1200, 630), "og-image.png must be 1200x630"
+
+
+check_og_image(ROOT, BASE_URL, pages)
+
 print(f"Passed (strict): {len(pages)} pages, {len(old_pages)} backup pages, local assets, links, anchors and basic semantics")
