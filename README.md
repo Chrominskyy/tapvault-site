@@ -6,7 +6,7 @@ Public product website, support and development-stage privacy information. Based
 
 ## Website
 
-https://chrominskyy.github.io/tapvault-site/
+https://tapvault.chrominsky.dev/
 
 - Product overview: `index.html`
 - Setup and reports: `support.html`
